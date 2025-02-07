@@ -32,8 +32,20 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<h1>แนะนำตัว</h1>
+<hr>
+<h2> <strong>ชื่อนามสกุล :</strong> นันทวุฒิ ทัพธานี </h2>
+<hr>
+<p><Strong>ประวัติการศึกษา</Strong></p>
+<pre>
+    <strong>ประถมศึกษา</strong> : โรงเรียนวิจิตรวิทยา
+    <strong>มัธยมศึกษา</strong> : โรงเรียนเทพลีลา
+</pre>
+<hr>
+<p><strong>งานอดิเรก</strong> : ดูหนังเล่นเกม <br><strong>เป้าหมายในอนาตค</strong> : มีเงินมีอาชีพที่มั่นคง</p>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![lab3](https://github.com/user-attachments/assets/593c9f05-b007-4ce0-9dc9-e75129377e26)
 
 
