@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/aed6f6ae-24f5-4aeb-b349-38145afc4940)# ใบงานการทดลอง HTML
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
