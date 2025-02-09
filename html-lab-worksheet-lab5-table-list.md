@@ -68,8 +68,100 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery App</title>
+</head>
+<body>
 
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="files/document.pdf" download>Download Document</a>
+  </nav>
+
+  <button onclick="history.back()">⬅ Back</button>
+
+  <h2>Personal Information</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>Nanthawut Tapthanee</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>67030309@kmitl.ac.th</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Food Menu</h2>
+  <ul>
+    <li>ก๋วยเตี๋ยวน้ำตก</li>
+    <li>ก๋วยเตี๋ยวน้ำใส</li>
+    <li>ก๋วยเตี๋ยวต้มยำ</li>
+    <li>เย็นตาโฟ</li>
+  </ul>
+
+  <div>
+    <div onclick="showDialog('products/food1.jpg', 'ก๋วยเตี๋ยวน้ำตก')">
+      <img src="products/food1.jpg" alt="ก๋วยเตี๋ยวน้ำตก" style="width:100%; max-width:250px; height:auto;">
+      <p>ก๋วยเตี๋ยวน้ำตก</p>
+    </div>
+    <div onclick="showDialog('products/food2.jpg', 'ก๋วยเตี๋ยวน้ำใส')">
+      <img src="products/food2.jpg" alt="ไก่ย่าง" style="width:100%; max-width:250px; height:auto;">
+      <p>ก๋วยเตี๋ยวน้ำใส</p>
+    </div>
+    <div onclick="showDialog('products/food3.jpg', 'ก๋วยเตี๋ยวต้มยำ')">
+      <img src="products/food3.jpg" alt="ก๋วยเตี๋ยวต้มยำ" style="width:100%; max-width:250px; height:auto;">
+      <p>ก๋วยเตี๋ยวต้มยำ</p>
+    </div>
+    <div onclick="showDialog('products/food4.jpg', 'เย็นตาโฟ')">
+      <img src="products\food4.jpg" alt="เย็นตาโฟ" style="width:100%; max-width:250px; height:auto;">
+      <p>เย็นตาโฟ</p>
+    </div>
+  </div>
+
+  <div id="dialog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 16px; border-radius: 12px; max-width: 600px; text-align: center;">
+      <img id="dialog-image" src="" alt="" style="width: 100%; border-radius: 12px;">
+      <p id="dialog-description"></p>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function showDialog(imageSrc, description) {
+      document.getElementById('dialog-image').src = imageSrc;
+      document.getElementById('dialog-description').textContent = description;
+      document.getElementById('dialog').style.display = 'flex';
+    }
+
+    function closeDialog() {
+      document.getElementById('dialog').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![lab 5](https://github.com/user-attachments/assets/337e9966-fe0e-42e8-8dc4-fd8426b77711)
 
