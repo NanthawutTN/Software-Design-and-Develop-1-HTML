@@ -283,7 +283,7 @@
         <input type="submit" value="สมัครสมาชิก">
     </form>
 </body>
-</html>```html
+</html>
 
 ```
 - ภาพผลลัพธ์:
