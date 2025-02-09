@@ -1,4 +1,4 @@
-# ใบงานการทดลอง HTML
+![image](https://github.com/user-attachments/assets/aed6f6ae-24f5-4aeb-b349-38145afc4940)# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -166,9 +166,82 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery App</title>
+  <style>
+    
+
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border: 3px solid #333;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="files/document.pdf" download>Download Document</a>
+  </nav>
+
+  <button onclick="history.back()">⬅ Back</button>
+
+  <div class="gallery">
+    <div onclick="showDialog('imags/gallery/coin1.png', 'coin 1')">
+      <img src="imags/gallery/coin1.png" alt="Product 1">
+      <p>Coin 1</p>
+    </div>
+    <div onclick="showDialog('imags/gallery/coin2.png', 'coin 2 ')">
+      <img src="imags/gallery/coin2.png" alt="Product 2">
+      <p>Coin 2</p>
+    </div>
+    <div onclick="showDialog('imags/gallery/coin3.png', 'coin 3 ')">
+      <img src="imags/gallery/coin3.png" alt="Product 3">
+      <p>Coin 3</p>
+    </div>
+    <div onclick="showDialog('imags/gallery/coin4.png', 'coin 4')">
+      <img src="imags/gallery/coin4.png" alt="Product 4">
+      <p>Coin 4</p>
+    </div>
+  </div>
+
+  <div id="dialog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 16px; border-radius: 12px; max-width: 600px; text-align: center;">
+      <img id="dialog-image" src="" alt="" style="width: 100%; border-radius: 12px;">
+      <p id="dialog-description"></p>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function showDialog(imageSrc, description) {
+      document.getElementById('dialog-image').src = imageSrc;
+      document.getElementById('dialog-description').textContent = description;
+      document.getElementById('dialog').style.display = 'flex';
+    }
+
+    function closeDialog() {
+      document.getElementById('dialog').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/614baf42-1dac-4322-8553-2e2cc24770fe)
 
 
 
