@@ -53,7 +53,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![lab 1](https://github.com/user-attachments/assets/2a8c8097-58ec-40bb-ba7b-333eb7e76791)
+
+![lab 2](https://github.com/user-attachments/assets/9362ee7b-cd44-41a1-90a5-28987bd8b945)
 
 
 
